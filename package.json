@@ -1,0 +1,38 @@
+{
+  "name": "wikistreets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wikistreets is a simple yet powerful online map maker. Snap and map photos and notes while at home or on the road. Share your map and invite others to collaborate. Fork (i.e. copy) any map.",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "start-dev": "",
+    "build-browser-js": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "wikistreets.io",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": ">=3.5.0",
+    "gray-matter": "^4.0.3",
+    "leaflet-editable": "^1.2.0",
+    "leaflet": "~1.3.1",
+    "leaflet-extra-markers": "^1.2.1",
+    "leaflet.markercluster": "^1.4.1",
+    "popper.js": "^1.16.1",
+    "rewire": "^5.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "nyc": {
+    "exclude": [
+      "__tests__",
+      "node_modules"
+    ],
+    "cache": false,
+    "report-dir": "./__tests__/report"
+  }
+}
